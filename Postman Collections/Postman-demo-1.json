@@ -1,0 +1,1292 @@
+{
+	"info": {
+		"_postman_id": "a8c78963-7732-4f91-b444-8d9512454ecf",
+		"name": "AWS API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "COPS",
+			"item": [
+				{
+					"name": "get-balance-by-reference_number",
+					"id": "be7f6dea-f6bd-478f-ac10-e733fb99c221",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{cops_url}}/reference_number/111/balance?subsidiary_code=MY",
+							"protocol": "https",
+							"host": [
+								"{{cops_url}}"
+							],
+							"path": [
+								"reference_number",
+								"111",
+								"balance"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "MY"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-house_account-balance",
+					"id": "dde59dd3-d2a3-4d81-b188-5a9ee99d17c9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{cops_url}}/house_account/balance?subsidiary_code=US",
+							"protocol": "https",
+							"host": [
+								"{{cops_url}}"
+							],
+							"path": [
+								"house_account",
+								"balance"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-balances-contactid",
+					"id": "1c954ee7-a864-4d7c-9419-4a0d607238dd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{cops_url}}/contacts/10022622449/balances?subsidiary_code=US&txn_subsidiary_code=US&current_date=2022-12-21T23:59:00.000Z",
+							"protocol": "https",
+							"host": [
+								"{{cops_url}}"
+							],
+							"path": [
+								"contacts",
+								"10022622449",
+								"balances"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								},
+								{
+									"key": "txn_subsidiary_code",
+									"value": "US"
+								},
+								{
+									"key": "current_date",
+									"value": "2022-12-21T23:59:00.000Z"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-balances-contactid Copy",
+					"id": "af0df6d9-3e33-4673-b6fe-531c4d234213",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://qa.narcops.mkapps.com/contacts/126987013/balances?subsidiary_code=US&txn_subsidiary_code=US&current_date=2025-08-27T23:59:00.000Z",
+							"protocol": "https",
+							"host": [
+								"qa",
+								"narcops",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"contacts",
+								"126987013",
+								"balances"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								},
+								{
+									"key": "txn_subsidiary_code",
+									"value": "US"
+								},
+								{
+									"key": "current_date",
+									"value": "2025-08-27T23:59:00.000Z"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-house_account-balance Copy",
+					"id": "05bdd957-ac41-46ae-b2a9-b65c04175ac9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://uat.narcops.mkapps.com/house_account/balance?subsidiary_code=US",
+							"protocol": "https",
+							"host": [
+								"uat",
+								"narcops",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"house_account",
+								"balance"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "67983049-e760-4667-99e3-60d5d7e3ad8e"
+		},
+		{
+			"name": "CAM",
+			"item": [
+				{
+					"name": "get-balance-by-reference_number",
+					"id": "32dd338a-4a78-45b8-8bd1-1341cc5f2d48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{cops_url}}/reference_number/111/balance?subsidiary_code=MY",
+							"protocol": "https",
+							"host": [
+								"{{cops_url}}"
+							],
+							"path": [
+								"reference_number",
+								"111",
+								"balance"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "MY"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "8aeabde6-b492-4485-b9ed-c31e962ff644"
+		},
+		{
+			"name": "Vertex",
+			"item": [
+				{
+					"name": "Vertex-GetTaxAreaID",
+					"id": "efa4aa7d-513b-45d3-8e31-9fe9f8acc57e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{vertex_url}}/GetTaxAreaID?OrderDate=20220101&PurchaserID=1&City=Addison&State=Texas&County=Dallas&ZipCode=75001",
+							"protocol": "https",
+							"host": [
+								"{{vertex_url}}"
+							],
+							"path": [
+								"GetTaxAreaID"
+							],
+							"query": [
+								{
+									"key": "OrderDate",
+									"value": "20220101"
+								},
+								{
+									"key": "PurchaserID",
+									"value": "1"
+								},
+								{
+									"key": "City",
+									"value": "Addison"
+								},
+								{
+									"key": "State",
+									"value": "Texas"
+								},
+								{
+									"key": "County",
+									"value": "Dallas"
+								},
+								{
+									"key": "ZipCode",
+									"value": "75001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-GetTaxAreaID Copy",
+					"id": "30bdb068-82bc-4caf-893b-58a90be354e4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{vertex_url}}/GetTaxAreaID?OrderDate=20220101&PurchaserID=1&City=Addison&State=Texas&County=Dallas&ZipCode=75001",
+							"protocol": "https",
+							"host": [
+								"{{vertex_url}}"
+							],
+							"path": [
+								"GetTaxAreaID"
+							],
+							"query": [
+								{
+									"key": "OrderDate",
+									"value": "20220101"
+								},
+								{
+									"key": "PurchaserID",
+									"value": "1"
+								},
+								{
+									"key": "City",
+									"value": "Addison"
+								},
+								{
+									"key": "State",
+									"value": "Texas"
+								},
+								{
+									"key": "County",
+									"value": "Dallas"
+								},
+								{
+									"key": "ZipCode",
+									"value": "75001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-GetTaxAreaID Copy",
+					"id": "833d30c9-7c35-429d-99f5-9238a0be5650",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev.narnettax.mkapps.com/GetTaxAreaID?OrderDate=20220101&PurchaserID=1&City=Addison&State=Texas&County=Dallas&ZipCode=75001",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"narnettax",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"GetTaxAreaID"
+							],
+							"query": [
+								{
+									"key": "OrderDate",
+									"value": "20220101"
+								},
+								{
+									"key": "PurchaserID",
+									"value": "1"
+								},
+								{
+									"key": "City",
+									"value": "Addison"
+								},
+								{
+									"key": "State",
+									"value": "Texas"
+								},
+								{
+									"key": "County",
+									"value": "Dallas"
+								},
+								{
+									"key": "ZipCode",
+									"value": "75001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-CalculateTax UAT",
+					"id": "9f570183-6933-41db-b252-1496b7848b85",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PurchaserID\": \"TG0792\",\r\n    \"TaxAreaID\": 480730000,\r\n    \"OrderDate\": \"20240611\",\r\n    \"City\": \"Lynden\",\r\n    \"State\": \"WA\",\r\n    \"County\": \"Whatcom\",\r\n    \"ZipCode\": \"98264-9632\",\r\n    \"PartList\": {\r\n        \"PartInfo\": [\r\n            {\r\n                \"PartID\": \"10054563\",\r\n                \"UUID\": \"35dde7a9be36dfd0b7bd77117a\",\r\n                \"SectionCode\": \"1\",\r\n                \"Quantity\": 1,\r\n                \"UnitPrice\": 16\r\n            },\r\n            {\r\n                \"PartID\": \"10155214\",\r\n                \"UUID\": \"9b8a7bcb2b8640a1854278266d\",\r\n                \"SectionCode\": \"1\",\r\n                \"Quantity\": 1,\r\n                \"UnitPrice\": 20\r\n            },\r\n            {\r\n                \"PartID\": \"999999\",\r\n                \"SectionCode\": \"DF\",\r\n                \"Quantity\": 1,\r\n                \"UnitPrice\": 5.95\r\n            }\r\n        ]\r\n    }\r\n}"
+						},
+						"url": "https://uat.narnettax.mkapps.com/CalculateTax"
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-CalculateTax PROD",
+					"id": "9e737c09-28c1-4f3d-b035-336f7424bee4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PurchaserID\": \"TG0792\",\r\n    \"TaxAreaID\": 480730000,\r\n    \"OrderDate\": \"20240611\",\r\n    \"City\": \"Lynden\",\r\n    \"State\": \"WA\",\r\n    \"County\": \"Whatcom\",\r\n    \"ZipCode\": \"98264-9632\",\r\n    \"PartList\": {\r\n        \"PartInfo\": [\r\n            {\r\n                \"PartID\": \"10054563\",\r\n                \"UUID\": \"35dde7a9be36dfd0b7bd77117a\",\r\n                \"SectionCode\": \"1\",\r\n                \"Quantity\": 1,\r\n                \"UnitPrice\": 16\r\n            },\r\n            {\r\n                \"PartID\": \"10155214\",\r\n                \"UUID\": \"9b8a7bcb2b8640a1854278266d\",\r\n                \"SectionCode\": \"1\",\r\n                \"Quantity\": 1,\r\n                \"UnitPrice\": 20\r\n            },\r\n            {\r\n                \"PartID\": \"999999\",\r\n                \"SectionCode\": \"DF\",\r\n                \"Quantity\": 1,\r\n                \"UnitPrice\": 5.95\r\n            }\r\n        ]\r\n    }\r\n}"
+						},
+						"url": "https://narnettax.mkapps.com/CalculateTax"
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-CalculateTax DEV",
+					"id": "bcfe0b99-8080-4a51-b9b6-f395b4e9bfe5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TaxAreaID\": 600010010,\r\n  \"OrderDate\": \"2025-11-15\",\r\n  \"PurchaserID\": \"5898AK\",\r\n  \"City\": \"Puerto Plata\",\r\n  \"State\": \"DR\",\r\n  \"County\": \"\",\r\n  \"ZipCode\": \"57000\",\r\n  \"PartList\": {\r\n    \"PartInfo\": [\r\n      {\r\n        \"PartID\": \"1\",\r\n        \"SectionCode\": \"1\",\r\n        \"Quantity\": 1\r\n      },\r\n      {\r\n        \"PartID\": \"2\",\r\n        \"SectionCode\": \"1\",\r\n        \"Quantity\": 2\r\n      }\r\n    ]\r\n  }\r\n}"
+						},
+						"url": "https://qa.narnettax.mkapps.com/CalculateTax"
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-CalculateTax Freight",
+					"id": "ce09b834-301b-4f58-a894-544cea05c500",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TaxAreaID\":441136035,\r\n        \"OrderDate\":\"10-13-2021\",\r\n        \"PartList\":[\r\n            {\r\n                \"PartInfo\" : {\r\n                    \"PartID\":\"999999\",\r\n                    \"SectionCode\":\"5X\",\r\n                    \"Quantity\":1,\r\n                    \"UnitPrice\":14.95\r\n                }\r\n            }\r\n        ],\r\n        \"PurchaserID\":\"CM0000\",\r\n        \"City\":\"Frisco\",\r\n        \"State\":\"TX\",\r\n        \"County\":\"Denton\",\r\n        \"ZipCode\":\"75036\"\r\n}"
+						},
+						"url": "https://dev.narnettax.mkapps.com/CalculateTax"
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-CalculateTax Service Fee",
+					"id": "fc31201e-dfb8-4645-bfa4-df443771bdff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"TaxAreaID\":441136035,\r\n        \"OrderDate\":\"10-13-2021\",\r\n        \"PartList\":[\r\n            {\r\n                \"PartInfo\" : {\r\n                    \"PartID\":\"1\",\r\n                    \"SectionCode\":\"1\",\r\n                    \"Quantity\":1,\r\n                    \"UnitPrice\":25\r\n                }\r\n            },\r\n            {\r\n                \"PartInfo\" : {\r\n                    \"PartID\":\"2\",\r\n                    \"SectionCode\":\"1\",\r\n                    \"Quantity\":2,\r\n                    \"UnitPrice\":10\r\n                }\r\n            }\r\n        ],\r\n        \"PurchaserID\":\"CM0000\",\r\n        \"City\":\"Frisco\",\r\n        \"State\":\"TX\",\r\n        \"County\":\"Denton\",\r\n        \"ZipCode\":\"75036\"\r\n}"
+						},
+						"url": "https://dev.narnettax.mkapps.com/CalculateTax"
+					},
+					"response": []
+				},
+				{
+					"name": "Vertex-CalculateTax V2",
+					"id": "9a22584a-1f20-4fd8-8936-5676bf1d2ba8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"TaxAreaID\": 441136035,\r\n  \"OrderDate\": \"10-13-2021\",\r\n  \"PurchaserID\": \"CM0000\",\r\n  \"City\": \"Frisco\",\r\n  \"State\": \"TX\",\r\n  \"County\": \"Denton\",\r\n  \"ZipCode\": \"75036\",\r\n  \"PartList\": {\r\n    \"PartInfo\": [\r\n      {\r\n        \"PartID\": \"1\",\r\n        \"SectionCode\": \"1\",\r\n        \"Quantity\": 1,\r\n        \"UnitPrice\": 25\r\n      },\r\n      {\r\n        \"PartID\": \"2\",\r\n        \"SectionCode\": \"1\",\r\n        \"Quantity\": 2,\r\n        \"UnitPrice\": 10\r\n      }\r\n    ]\r\n  }\r\n}\r\n"
+						},
+						"url": "https://uat.narnettax.mkapps.com/CalculateTax"
+					},
+					"response": []
+				}
+			],
+			"id": "c1f39d43-ec68-4f4f-abcf-6264f99226e4"
+		},
+		{
+			"name": "Code1",
+			"item": [
+				{
+					"name": "Code 1",
+					"id": "91acac99-3b0e-4b24-87c7-0c1e5e6df600",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "\"#POST\"",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{code1_url}}/ValidateMailingAddress?AddressLine1=10300 Huntington Rd&AddressLine2=&City=Frisco&StateProvince=TX&PostalCode=75035",
+							"protocol": "https",
+							"host": [
+								"{{code1_url}}"
+							],
+							"path": [
+								"ValidateMailingAddress"
+							],
+							"query": [
+								{
+									"key": "AddressLine1",
+									"value": "10300 Huntington Rd"
+								},
+								{
+									"key": "AddressLine2",
+									"value": ""
+								},
+								{
+									"key": "City",
+									"value": "Frisco"
+								},
+								{
+									"key": "StateProvince",
+									"value": "TX"
+								},
+								{
+									"key": "PostalCode",
+									"value": "75035"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Code 1 UAT",
+					"id": "c8df23f2-d45b-45fd-a355-4f93492936ce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "\"#POST\"",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://uat.narcode1.mkapps.com/ValidateMailingAddress?Address=16251 Dallas Pkwy&City=Addison&State=TX&Zip=75001",
+							"protocol": "https",
+							"host": [
+								"uat",
+								"narcode1",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"ValidateMailingAddress"
+							],
+							"query": [
+								{
+									"key": "Address",
+									"value": "16251 Dallas Pkwy"
+								},
+								{
+									"key": "AddressLine2",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "City",
+									"value": "Addison"
+								},
+								{
+									"key": "State",
+									"value": "TX"
+								},
+								{
+									"key": "Zip",
+									"value": "75001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Code 1 PROD",
+					"id": "57f2c4be-2b9d-4f8a-9337-b54c06ffbb66",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJSUzM4NCIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfaWQiOm51bGwsImF1ZCI6bnVsbCwic3ViIjpudWxsLCJpYXQiOjE2Nzc4MTkyOTYsImlzcyI6bnVsbCwiZXhwIjoxNjgwNDExMjk1OTY0LCJuYmYiOjE2Nzc4MTkyOTZ9.KrPo7IpCCxVkDZk0yqGIeNle_lf4vry8h1uXnJLVMWOmnJhqejHx_Lq6uPcGDEQLpXcfb-Pg_eJ9-T12HvO1lRZmekW2_cMMTNSs1SBUChhCf3WB8BnA2_rmBjvdkqxgE_xSVRisTz0efjUsgS4v5SGcdPMEUk67OZO4pJ0tGqqb2zFW3PHqssN8ryZxBzvjvxPSRst8wiA6IL2QD7og8KrhdnnmHRyeZd_2bEIN1GjhYSJDDzstAQvpVVgKjbQrJPRQ4TN5ri7im2x0sm-AXgA2ov7gaSz2p_7bwgD-2noFNraJvhc3lMDWOKnnt7H7y3v4csizEd8a7U9SCSeD8g"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "SOAPAction",
+								"value": "\"#POST\"",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://narcode1.mkapps.com/ValidateMailingAddress?Address=16251 Dallas Pkwy&City=Addison&State=TX&Zip=75001",
+							"protocol": "https",
+							"host": [
+								"narcode1",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"ValidateMailingAddress"
+							],
+							"query": [
+								{
+									"key": "Address",
+									"value": "16251 Dallas Pkwy"
+								},
+								{
+									"key": "AddressLine2",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "City",
+									"value": "Addison"
+								},
+								{
+									"key": "State",
+									"value": "TX"
+								},
+								{
+									"key": "Zip",
+									"value": "75001"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2f7a304a-32a3-485a-b107-a68d7d9b325d"
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Vertex-GetTaxAreaID",
+					"id": "8c8a38dd-313f-49a2-8d68-702247bf40e4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://{{vertex_url}}/GetTaxAreaID?OrderDate=20220101&PurchaserID=1&City=Addison&State=Texas&County=Dallas&ZipCode=75001",
+							"protocol": "https",
+							"host": [
+								"{{vertex_url}}"
+							],
+							"path": [
+								"GetTaxAreaID"
+							],
+							"query": [
+								{
+									"key": "OrderDate",
+									"value": "20220101"
+								},
+								{
+									"key": "PurchaserID",
+									"value": "1"
+								},
+								{
+									"key": "City",
+									"value": "Addison"
+								},
+								{
+									"key": "State",
+									"value": "Texas"
+								},
+								{
+									"key": "County",
+									"value": "Dallas"
+								},
+								{
+									"key": "ZipCode",
+									"value": "75001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Search Copy",
+					"id": "efd334a2-cb3a-4410-a729-4fa0890c0e92",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev.narorders.mkapps.com/20127910/search?subsidiary_code=US&date_start=2022-11-29T06:00:00.000Z&date_end=2022-12-30T05:59:59.997Z&page_number=0&page_size=50&sort=order-date-desc",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"narorders",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"20127910",
+								"search"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								},
+								{
+									"key": "date_start",
+									"value": "2022-11-29T06:00:00.000Z"
+								},
+								{
+									"key": "date_end",
+									"value": "2022-12-30T05:59:59.997Z"
+								},
+								{
+									"key": "page_number",
+									"value": "0"
+								},
+								{
+									"key": "page_size",
+									"value": "50"
+								},
+								{
+									"key": "sort",
+									"value": "order-date-desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Detail",
+					"id": "37f0ced2-b8b1-4eec-87a3-5975ade0ef62",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev.narorders.mkapps.com/B2875E4F-AF23-4BDC-8A99-0A7169A0CE8B/details?subsidiary_code=US",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"narorders",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"B2875E4F-AF23-4BDC-8A99-0A7169A0CE8B",
+								"details"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Order Detail - STG",
+					"id": "9021a388-b6e8-4e49-be8f-49cee3444824",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://uat.narorders.mkapps.com/CA6CD037-413D-4309-B843-4129D6B9DD7A/details?subsidiary_code=US",
+							"protocol": "https",
+							"host": [
+								"uat",
+								"narorders",
+								"mkapps",
+								"com"
+							],
+							"path": [
+								"CA6CD037-413D-4309-B843-4129D6B9DD7A",
+								"details"
+							],
+							"query": [
+								{
+									"key": "subsidiary_code",
+									"value": "US"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UAT-Bulkcancel",
+					"id": "b3aa45b0-16cc-4eb4-bc87-11843381badf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_ids\": [\r\n        \"00021698\"\r\n    ],\r\n    \"subsidiary_code\": \"US\"\r\n}"
+						},
+						"url": "https://uat.narorders.mkapps.com/bulkcancel"
+					},
+					"response": []
+				},
+				{
+					"name": "DEV-Bulkcancel",
+					"id": "97a5dde1-077d-4cb2-a31c-0bed57a31069",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_ids\": [\r\n        \"00027207\",\"00027601\"\r\n    ],\r\n    \"subsidiary_code\": \"US\"\r\n}"
+						},
+						"url": "https://dev.narorders.mkapps.com/bulkcancel"
+					},
+					"response": []
+				}
+			],
+			"id": "951ef444-a3dc-45c8-8fd6-e24d05c6afe2"
+		},
+		{
+			"name": "Propay",
+			"item": [
+				{
+					"name": "Propay-RetrieveAccountBalanceFromSQL",
+					"id": "65cb37da-80fd-4cc1-902f-f0a3c23c3c9c",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ContactID\": \"20127910\",\r\n  \"ProPayAccountNumber\": \"718039078\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/RetrieveAccountBalanceFromSQL"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-RetrieveAndSaveAccountBalance",
+					"id": "baefebd1-bf35-4029-ae90-4e3001131bb5",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ContactID\": \"20127910\",\r\n  \"ProPayAccountNumber\": \"718039078\",\r\n  \"TimeStamp\": \"2023-04-25T19:49:51.141Z\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/RetrieveAndSaveAccountBalance"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-RetrieveAccountBalance",
+					"id": "96055cd0-dc72-49a5-9e37-c63a5b593037",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ProPayAccountNumber\": \"718039078\"\r\n}"
+						},
+						"url": "https://uat.narpropay.mkapps.com/RetrieveAccountBalance"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-RetrieveAccountBalance PROD",
+					"id": "9d36d51e-62f9-4451-821f-3ed1745fc1d4",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ProPayAccountNumber\": \"718039078\"\r\n}"
+						},
+						"url": "https://narpropay.mkapps.com/RetrieveAccountBalance"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-RetrieveAccountBalanceByContactID UAT",
+					"id": "266cf998-ca66-4fb1-b4d4-f0ae88402807",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ContactID\": \"20515112\"\r\n}"
+						},
+						"url": "https://uat.narpropay.mkapps.com/RetrieveAccountBalanceByContactID"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-RetrieveAccountBalanceByContactID PROD",
+					"id": "7f193d08-d444-464e-abb4-7fb9bf2ca533",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ContactID\": \"200310955\"\r\n}"
+						},
+						"url": "https://narpropay.mkapps.com/RetrieveAccountBalanceByContactID"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-RetrieveAccountBalanceByContactID DEV",
+					"id": "cf54f04c-c4f2-416b-9516-3ad66c85065d",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ContactID\": \"20127910\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/RetrieveAccountBalanceByContactID"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-LookupPropayPaymentsByDateRange DEV",
+					"id": "ed38ab98-7cee-41cd-a55c-5cd581ce703e",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"StartDate\": \"1/1/2024\",\r\n  \"EndDate\": \"7/12/2024\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/LookupProPayPaymentsByDateRange"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-LookupPropayPaymentsByDateRange UAT",
+					"id": "84955db0-341b-49db-b036-0faaf8c73e99",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"StartDate\": \"1/1/2024\",\r\n  \"EndDate\": \"7/12/2024\"\r\n}"
+						},
+						"url": "https://uat.narpropay.mkapps.com/LookupProPayPaymentsByDateRange"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-LookupPropayPaymentsByDateRange PROD",
+					"id": "e2292bde-f946-4bd7-9ae8-7f2c482e4ce5",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"StartDate\": \"1/1/2024\",\r\n  \"EndDate\": \"7/12/2024\"\r\n}"
+						},
+						"url": "https://narpropay.mkapps.com/LookupProPayPaymentsByDateRange"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-LookupProPayPaymentByPaymentID",
+					"id": "39426936-8ea5-4a42-9246-d4750a655803",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"PaymentID\": \"b0e1c835-2ac5-4477-bcb4-cc1994e9dd25\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/LookupProPayPaymentByPaymentID"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-DepleteFunds",
+					"id": "7c5cd438-2a57-48c4-a788-d097990c2795",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ProPayAccountNumber\": \"718039078\",\r\n  \"Amount\": \"10\",\r\n  \"PaymentID\": \"1\",\r\n  \"FullfilmentLocationID\": \"1\",\r\n  \"OrderTypeID\": \"1\", \r\n  \"OrderEntrySourceID\": \"1\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/DepleteFunds"
+					},
+					"response": []
+				},
+				{
+					"name": "Propay-GetProPayAccountNumberByContactID",
+					"id": "71aba9d5-a594-48b8-bd6f-6dc65bfcfbc4",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ContactID\": \"20127910\"\r\n}"
+						},
+						"url": "https://dev.narpropay.mkapps.com/GetProPayAccountNumberByContactID"
+					},
+					"response": []
+				},
+				{
+					"name": "Legacy URL",
+					"id": "3ff41218-7284-4b04-9933-40e420ee553d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://netcc.mkdev.com/MkProPayIntegration/ProPayServices.asmx"
+					},
+					"response": []
+				},
+				{
+					"name": "Legacy - RetrieveAccountBalanceByContactID",
+					"id": "9df710ae-baa7-474a-a6ef-2e333c04a75d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "ContactID=21226105"
+						},
+						"url": "http://netcc.stgdmz.com/MkProPayIntegration/ProPayServices.asmx/RetrieveAccountBalanceByContactID"
+					},
+					"response": []
+				},
+				{
+					"name": "Direct Propay Service API",
+					"id": "5c16d6f8-f6aa-4dcb-9266-d984fd0ef68f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<?xml version='1.0'?>\r\n<!DOCTYPE Request.dtd>\r\n<XMLRequest>\r\n  <certStr>{0}</certStr>\r\n  <class>{0}</class>\r\n  <XMLTrans>\r\n    <transType>{0}</transType>\r\n    <accountNum>{0}</accountNum>\r\n  </XMLTrans>\r\n</XMLRequest>  ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://epay.propay.com/xml/xml.aspx/process"
+					},
+					"response": []
+				}
+			],
+			"id": "2c8e26fc-ebfd-4a5f-8030-eab717a371d2"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{aws_lambda_jwt}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "d4ff49a0-a5f4-477a-b7fd-f4df0a47913b"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "bc9fd896-bc67-40a9-9350-5dc3ba67a406"
+			}
+		}
+	]
+}
