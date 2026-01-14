@@ -831,7 +831,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://uat.narorders.mkapps.com/CA6CD037-413D-4309-B843-4129D6B9DD7A/details?subsidiary_code=US",
+							"raw": "https://uat.narorders.mkapps.com/127371352/unitsearch?subsidiary_code=CA",
 							"protocol": "https",
 							"host": [
 								"uat",
@@ -840,13 +840,19 @@
 								"com"
 							],
 							"path": [
-								"CA6CD037-413D-4309-B843-4129D6B9DD7A",
-								"details"
+								"127371352",
+								"unitsearch"
 							],
 							"query": [
 								{
 									"key": "subsidiary_code",
-									"value": "US"
+									"value": "CA"
+								},
+								{
+									"key": "sort",
+									"value": "last-name-asc",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						}
