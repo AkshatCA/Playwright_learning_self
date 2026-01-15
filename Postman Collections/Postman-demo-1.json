@@ -831,10 +831,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://uat.narorders.mkapps.com/23734233/unitsearch?subsidiary_code=CA",
+							"raw": "https://qa.narorders.mkapps.com/23734233/unitsearch?subsidiary_code=CA",
 							"protocol": "https",
 							"host": [
-								"uat",
+								"qa",
 								"narorders",
 								"mkapps",
 								"com"
